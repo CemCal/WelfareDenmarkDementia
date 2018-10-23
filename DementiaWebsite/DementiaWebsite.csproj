@@ -1,0 +1,156 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="2.1.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="2.1.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.1.4" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Views\Player\" />
+    <Folder Include="Views\Game\" />
+    <Folder Include="ViewComponents\" />
+    <Folder Include="Views\Home\" />
+    <Folder Include="Views\Scoreboard\" />
+    <Folder Include="Views\Shared\Components\" />
+    <Folder Include="Views\Shared\Components\Footer\" />
+    <Folder Include="Views\Shared\Components\NavBar\" />
+    <Folder Include="wwwroot\css\" />
+    <Folder Include="Views\Play\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Views\Home\Player.cshtml" />
+    <Compile Remove="Models\ErrorViewModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="Views\Index.cshtml" />
+    <Content Remove="Views\Home\About.cshtml" />
+    <Content Remove="wwwroot\images\banner1.svg" />
+    <Content Remove="wwwroot\js\site.js" />
+    <Content Remove="wwwroot\about.html" />
+    <Content Remove="wwwroot\contact.html" />
+    <Content Remove="wwwroot\gallery.html" />
+    <Content Remove="wwwroot\services.html" />
+    <Content Remove="wwwroot\fonts\FontAwesome.otf" />
+    <Content Remove="wwwroot\fonts\fontawesome-webfont.eot" />
+    <Content Remove="wwwroot\fonts\fontawesome-webfont.svg" />
+    <Content Remove="wwwroot\fonts\fontawesome-webfont.ttf" />
+    <Content Remove="wwwroot\fonts\fontawesome-webfont.woff" />
+    <Content Remove="wwwroot\fonts\glyphicons-halflings-regular.eot" />
+    <Content Remove="wwwroot\fonts\glyphicons-halflings-regular.svg" />
+    <Content Remove="wwwroot\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Remove="wwwroot\fonts\glyphicons-halflings-regular.woff" />
+    <Content Remove="wwwroot\img\1.jpg" />
+    <Content Remove="wwwroot\img\10.jpg" />
+    <Content Remove="wwwroot\img\11.jpg" />
+    <Content Remove="wwwroot\img\12.jpg" />
+    <Content Remove="wwwroot\img\13.jpg" />
+    <Content Remove="wwwroot\img\2.jpg" />
+    <Content Remove="wwwroot\img\7.jpg" />
+    <Content Remove="wwwroot\img\9.jpg" />
+    <Content Remove="wwwroot\img\gallery1.png" />
+    <Content Remove="wwwroot\img\gallery2.png" />
+    <Content Remove="wwwroot\img\gallery3.png" />
+    <Content Remove="wwwroot\img\gallery4.png" />
+    <Content Remove="wwwroot\img\gallery5.png" />
+    <Content Remove="wwwroot\img\gallery6.png" />
+    <Content Remove="wwwroot\img\man1.jpg" />
+    <Content Remove="wwwroot\img\man2.jpg" />
+    <Content Remove="wwwroot\img\man3.jpg" />
+    <Content Remove="wwwroot\img\man4.jpg" />
+    <Content Remove="wwwroot\js\bootstrap.js" />
+    <Content Remove="wwwroot\js\bootstrap.min.js" />
+    <Content Remove="wwwroot\js\jquery.js" />
+    <Content Remove="wwwroot\js\wow.min.js" />
+    <Content Remove="wwwroot\Build\PuzzlePitchHTML.data.unityweb" />
+    <Content Remove="wwwroot\Build\PuzzlePitchHTML.json" />
+    <Content Remove="wwwroot\Build\PuzzlePitchHTML.wasm.code.unityweb" />
+    <Content Remove="wwwroot\Build\PuzzlePitchHTML.wasm.framework.unityweb" />
+    <Content Remove="wwwroot\Build\UnityLoader.js" />
+    <Content Remove="wwwroot\TemplateData\UnityProgress.js" />
+    <Content Remove="wwwroot\TemplateData\favicon.ico" />
+    <Content Remove="wwwroot\TemplateData\fullscreen.png" />
+    <Content Remove="wwwroot\TemplateData\progressEmpty.Dark.png" />
+    <Content Remove="wwwroot\TemplateData\progressEmpty.Light.png" />
+    <Content Remove="wwwroot\TemplateData\progressFull.Dark.png" />
+    <Content Remove="wwwroot\TemplateData\progressFull.Light.png" />
+    <Content Remove="wwwroot\TemplateData\progressLogo.Dark.png" />
+    <Content Remove="wwwroot\TemplateData\progressLogo.Light.png" />
+    <Content Remove="wwwroot\TemplateData\style.css" />
+    <Content Remove="wwwroot\TemplateData\webgl-logo.png" />
+    <Content Remove="Views\Play\index.cshtml" />
+    <Content Remove="wwwroot\img\unblock.png" />
+    <Content Remove="wwwroot\img\unblock.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="wwwroot\fonts\FontAwesome.otf" />
+    <None Include="wwwroot\fonts\fontawesome-webfont.eot" />
+    <None Include="wwwroot\fonts\fontawesome-webfont.svg" />
+    <None Include="wwwroot\fonts\fontawesome-webfont.ttf" />
+    <None Include="wwwroot\fonts\fontawesome-webfont.woff" />
+    <None Include="wwwroot\fonts\glyphicons-halflings-regular.eot" />
+    <None Include="wwwroot\fonts\glyphicons-halflings-regular.svg" />
+    <None Include="wwwroot\fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="wwwroot\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="wwwroot\img\1.jpg" />
+    <None Include="wwwroot\img\10.jpg" />
+    <None Include="wwwroot\img\11.jpg" />
+    <None Include="wwwroot\img\12.jpg" />
+    <None Include="wwwroot\img\13.jpg" />
+    <None Include="wwwroot\img\2.jpg" />
+    <None Include="wwwroot\img\7.jpg" />
+    <None Include="wwwroot\img\9.jpg" />
+    <None Include="wwwroot\img\gallery1.png" />
+    <None Include="wwwroot\img\gallery2.png" />
+    <None Include="wwwroot\img\gallery3.png" />
+    <None Include="wwwroot\img\gallery4.png" />
+    <None Include="wwwroot\img\gallery5.png" />
+    <None Include="wwwroot\img\gallery6.png" />
+    <None Include="wwwroot\img\man1.jpg" />
+    <None Include="wwwroot\img\man2.jpg" />
+    <None Include="wwwroot\img\man3.jpg" />
+    <None Include="wwwroot\img\man4.jpg" />
+    <None Include="wwwroot\js\bootstrap.js" />
+    <None Include="wwwroot\js\bootstrap.min.js" />
+    <None Include="wwwroot\js\jquery.js" />
+    <None Include="wwwroot\js\wow.min.js" />
+    <None Include="wwwroot\css\animate.css" />
+    <None Include="wwwroot\css\animate.min.css" />
+    <None Include="wwwroot\css\bootstrap.css" />
+    <None Include="wwwroot\css\bootstrap.min.css" />
+    <None Include="wwwroot\css\bootstrap-theme.css" />
+    <None Include="wwwroot\css\bootstrap-theme.min.css" />
+    <None Include="wwwroot\css\font-awesome.css" />
+    <None Include="wwwroot\css\font-awesome.min.css" />
+    <None Include="wwwroot\css\style.css" />
+    <None Include="wwwroot\Build\PuzzlePitchHTML.data.unityweb" />
+    <None Include="wwwroot\Build\PuzzlePitchHTML.json" />
+    <None Include="wwwroot\Build\PuzzlePitchHTML.wasm.code.unityweb" />
+    <None Include="wwwroot\Build\PuzzlePitchHTML.wasm.framework.unityweb" />
+    <None Include="wwwroot\Build\UnityLoader.js" />
+    <None Include="wwwroot\TemplateData\UnityProgress.js" />
+    <None Include="wwwroot\TemplateData\favicon.ico" />
+    <None Include="wwwroot\TemplateData\fullscreen.png" />
+    <None Include="wwwroot\TemplateData\progressEmpty.Dark.png" />
+    <None Include="wwwroot\TemplateData\progressEmpty.Light.png" />
+    <None Include="wwwroot\TemplateData\progressFull.Dark.png" />
+    <None Include="wwwroot\TemplateData\progressFull.Light.png" />
+    <None Include="wwwroot\TemplateData\progressLogo.Dark.png" />
+    <None Include="wwwroot\TemplateData\progressLogo.Light.png" />
+    <None Include="wwwroot\TemplateData\style.css" />
+    <None Include="wwwroot\TemplateData\webgl-logo.png" />
+    <None Include="wwwroot\img\unblock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Update="wwwroot\Default.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+  </ItemGroup>
+</Project>
