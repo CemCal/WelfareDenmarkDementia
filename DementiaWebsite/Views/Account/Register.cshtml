@@ -1,0 +1,45 @@
+﻿@addTagHelper "*, Microsoft.AspNetCore.Mvc.TagHelpers"
+@model DementiaWebsite.Models.RegisterViewModel
+@{
+    Layout = "_Layout";
+}
+
+<form method="post" asp-controller="Account" asp-action="Register">
+    @*<div asp-validation-summary="ValidationSummary.ModelOnly"></div>*@
+
+    <div>
+        <label asp-for="UserName"></label>
+        <input asp-for="UserName" />
+        <span asp-validation-for="UserName"></span>
+    </div> 
+
+    <div>   
+        <label asp-for="Password"></label>
+        <input asp-for="Password" />
+        <span asp-validation-for="Password"></span>
+    </div>
+
+    <div>
+        <label asp-for="ConfirmPassword"></label>
+        <input asp-for="ConfirmPassword" />
+        <span asp-validation-for="ConfirmPassword"></span>
+    </div>
+
+    <div>
+        <input type="submit" value="Register" />
+    </div>
+
+</form>
+
+@await (Component.InvokeAsync<DementiaWebsite.ViewComponents.FooterViewComponent>())
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script>
+    wow = new WOW(
+        {
+
+        })
+        .init();
+</script>
